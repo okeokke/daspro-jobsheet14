@@ -14,6 +14,13 @@ Masukkan angka ke-2: 75
 Masukkan angka ke-1: 65
 Total dari 4 angka yang dimasukkan adalah: 320
 ```  
+  
+  
+
+Jawaban :   
+  [T1Job14_08.java](T1Job14_08.java)
+  ![T1](T1.png)
+
 ---  
 
 
