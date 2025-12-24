@@ -82,7 +82,7 @@ Return: Nilai faktor (120) dikembalikan
 ---
 
 ## Percobaan 2
-[Percobaan2_08.java](/Pecobaan2_08.java)  
+[Kondisi Awal Percobaan2_08.java | Commit (8fc26d7)](/https://github.com/okeokke/daspro-jobsheet14/commit/8fc26d7b38541b0603f5d8d6958b02c8377b18ac)  
 Screenshot Inisial:  
 ![Percobaan2 Initial](P2N0.png)  
   
@@ -108,7 +108,9 @@ hitungPangkat(2, 5)
 ```
 Pada hitungPangkat(2, 0), fungsi tidak dipanggil lagi melainkan langsung mengembalikan nilai 1 karena sudah mencapai base case. Setelah itu, hasil dari setiap pemanggilan sebelumnya dikembalikan ke pemanggilnya (proses unwinding) hingga diperoleh hasil akhir.
 
-2. 
+2. [Percobaan2_08.java](/Percobaan2_08.java)  
+![alt text](P2N2.png)  
+
   
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
