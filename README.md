@@ -82,7 +82,7 @@ Return: Nilai faktor (120) dikembalikan
 ---
 
 ## Percobaan 2
-[Kondisi Awal Percobaan2_08.java | Commit (8fc26d7)](/https://github.com/okeokke/daspro-jobsheet14/commit/8fc26d7b38541b0603f5d8d6958b02c8377b18ac)  
+[Kondisi Awal Percobaan2_08.java | Commit (8fc26d7)](https://github.com/okeokke/daspro-jobsheet14/commit/8fc26d7b38541b0603f5d8d6958b02c8377b18ac)  
 Screenshot Inisial:  
 ![Percobaan2 Initial](P2N0.png)  
   
@@ -117,9 +117,9 @@ Pada hitungPangkat(2, 0), fungsi tidak dipanggil lagi melainkan langsung mengemb
 ---
 
 ## Percobaan 3  
-[]()  
+[Percobaan3_08.java](/Percobaan3_08.java)  
 Screenshot Inisial :  
-  ![Percobaan3 Initial]()
+  ![Percobaan3 Initial](P3N0.png)
   
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
@@ -130,8 +130,60 @@ Screenshot Inisial :
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
 ### Jawaban
-1. 
-2. 
+1. .  (keduanya di dalam fungsi hitungPangkat)  
+Base Case `(tahun==0)`  
+```
+...
+  if (tahun==0) {
+      return (saldo);
+    }
+    ...
+```  
+.    
+Recursion Call (`return (x*hitungPangkat(x, y-1));`)
+```
+...
+  else {
+      return (x*hitungPangkat(x, y-1));
+    }
+    ...
+```
+2. .  
+fase ekspansi (pemanggilan sampai di base case)
+```
+hitungLaba(100000, 3)
+-> 1.11 * hitungLaba(100000, 2)
+
+hitungLaba(100000, 2)
+-> 1.11 * hitungLaba(100000, 1)
+
+hitungLaba(100000, 1)
+-> 1.11 * hitungLaba(100000, 0)
+
+hitungLaba(100000, 0)
+-> return 100000   (base case tercapai)
+```
+setelah ini, memasuki ke fase substitusi  
+  
+  
+fase substitusi (return nilai)
+```
+hitungLaba(100000, 0)
+= 100000
+
+hitungLaba(100000, 1)
+= 1.11 × 100000
+= 111000
+
+hitungLaba(100000, 2)
+= 1.11 × 111000
+= 123210
+
+hitungLaba(100000, 3)
+= 1.11 × 123210
+= 136763.1
+```
+hasil akhir = 136763.1
   
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
