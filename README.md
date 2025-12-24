@@ -32,7 +32,7 @@ Total dari 4 angka yang dimasukkan adalah: 320
 ---
 
 ## Percobaan 1
-[Percobaan1_08.java](\Percobaan1_08.java)  
+[Percobaan1_08.java](/Percobaan1_08.java)  
 Screenshot Inisial :  
 ![Percobaan 1 Initial](P1N0.png)  
   
@@ -82,9 +82,9 @@ Return: Nilai faktor (120) dikembalikan
 ---
 
 ## Percobaan 2
-[]()  
+[Percobaan2_08.java](/Pecobaan2_08.java)  
 Screenshot Inisial:  
-![Percobaan2 Initial]()  
+![Percobaan2 Initial](P2N0.png)  
   
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
@@ -96,7 +96,18 @@ Screenshot Inisial:
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
 ### Jawaban
-1. 
+1. fungsi `hitungPangkat()` akan terus dipanggil sampai kondisi dasar (base case) dicapai, yaitu ketika parameter y (pangkat) sama dengan 0.
+```
+hitungPangkat(2, 5)
+ memanggil hitungPangkat(2, 4)
+  memanggil hitungPangkat(2, 3)
+   memanggil hitungPangkat(2, 2)
+    memanggil hitungPangkat(2, 1)
+     memanggil hitungPangkat(2, 0)
+      BASE CASE: y == 0, return 1 tanpa pemanggilan lanjut
+```
+Pada hitungPangkat(2, 0), fungsi tidak dipanggil lagi melainkan langsung mengembalikan nilai 1 karena sudah mencapai base case. Setelah itu, hasil dari setiap pemanggilan sebelumnya dikembalikan ke pemanggilnya (proses unwinding) hingga diperoleh hasil akhir.
+
 2. 
   
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
