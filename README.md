@@ -32,9 +32,9 @@ Total dari 4 angka yang dimasukkan adalah: 320
 ---
 
 ## Percobaan 1
-[]()  
+[Percobaan1_08.java](\Percobaan1_08.java)  
 Screenshot Inisial :  
-![Percobaan 1 Initial]()  
+![Percobaan 1 Initial](P1N0.png)  
   
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
@@ -46,8 +46,35 @@ Screenshot Inisial :
 [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
 
 ### Jawaban
-1. 
-2. 
+1. Fungsi rekursif adalah fungsi yang di dalam prosesnya memanggil dirinya sendiri lagi. Pemanggilan ini dilakukan dengan cara mengubah nilai parameter sedemikian rupa agar mendekati dan sampai kondisi dasar/kondisi berhenti (base case). Tanpa base case, fungsi rekursif akan memanggil dirinya sendiri terus menerus (infinite recusrsion) dan menyebabkan error (stack overflow).  
+  
+2. Ya, hasil dari faktorialRekursif(5) dan faktorialIteratif(5) adalah sama, yaitu 120.  
+Perbedaannya ada pada alur jalannya program:  
+.
+Fungsi rekursif (`faktorialRekursif`)  
+Program berjalan dengan cara memanggil fungsi berulang-ulang.  
+Contohnya:  
+`faktorialRekursif(5)` dipanggil, lalu di dalamnya dipanggil fungsi `5 * faktorialRekursif(4)`, lalu  `4 * faktorialRekursif(3)`, dan seterusnya sampai `faktorialRekursif(0)`.
+Setelah mencapai kondisi dasar, hasil dikembalikan satu per satu ke pemanggil sebelumnya sampai menghasilkan nilai akhir.
+```
+faktorialRekursif(1) = 1 × 1 = 1
+faktorialRekursif(2) = 2 × 1 = 2
+faktorialRekursif(3) = 3 × 2 = 6
+faktorialRekursif(4) = 4 × 6 = 24
+faktorialRekursif(5) = 5 × 24 = 120
+```
+.  
+Fungsi iteratif (`faktorialIteratif`)  
+Program berjalan menggunakan perulangan for tanpa pemanggilan fungsi berulang. Nilai faktorial dihitung langsung dengan mengalikan variabel faktor dari n sampai 1 dalam satu alur.  
+Loop for berjalan dari 5 hingga 1, mengupdate variabel:  
+```
+Iterasi 1: faktor = 1 × 5 = 5
+Iterasi 2: faktor = 5 × 4 = 20
+Iterasi 3: faktor = 20 × 3 = 60
+Iterasi 4: faktor = 60 × 2 = 120
+Iterasi 5: faktor = 120 × 1 = 120
+```
+Return: Nilai faktor (120) dikembalikan
   
 
   [Kembali ke #Daftar_Percobaan](#daftar_percobaan-1)
